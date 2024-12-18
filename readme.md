@@ -19,4 +19,23 @@ The `iframe` is stretched to be the full width of the display for optimal viewin
 
 The toolbar typically shown across the bottom of the embedded slideshow is being removed via the `iframe` `src` attribute's GET parameter `rm=minimal`. 
 
+## Incognito
 
+The browser launches in Incognito mode so that, if the browser closes improperly, the Chrome/Chromium feature to reopen improperly-closed windows/tabs does not display.
+
+## Hidden Cursor
+We are auto-hiding the cursor with an `unclutter` command. See the startup script for details. **Note**: setting it to 0 seconds is super buggy and hides the mouse too quickly. Use some value > 0.
+
+## Page Refresh
+Time to refresh the page is currently 1 day. This uses the `meta` refresh tag in the `head` of the page.
+
+## Pi Fan
+As of 11-11-2022, a fan has been added to the pi to keep it from overheating and crashing. The fan is the high-pitched noise coming from the back of the tv. You're welcome...
+
+
+```
+[Desktop Entry]
+Type=Application
+Name=AutoBrowser
+Exec=chromium-browser --start-fullscreen --incognito ~/Web/index.html && unclutter -idle 1
+```
