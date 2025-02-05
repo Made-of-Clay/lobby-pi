@@ -37,5 +37,5 @@ As of 11-11-2022, a fan has been added to the pi to keep it from overheating and
 [Desktop Entry]
 Type=Application
 Name=AutoBrowser
-Exec=chromium-browser --start-fullscreen --incognito ~/Web/index.html && unclutter -idle 1
+Exec=chromium-browser --start-fullscreen --incognito ~/Web/index.html
 ```
