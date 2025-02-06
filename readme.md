@@ -32,10 +32,12 @@ Time to refresh the page is currently 1 day. This uses the `meta` refresh tag in
 ## Pi Fan
 As of 11-11-2022, a fan has been added to the pi to keep it from overheating and crashing. The fan is the high-pitched noise coming from the back of the tv. You're welcome...
 
+Update: pi & fan have been updated; much quieter now.
+
 
 ```
 [Desktop Entry]
 Type=Application
 Name=AutoBrowser
-Exec=chromium-browser --start-fullscreen --incognito ~/Web/index.html
+Exec=chromium-browser --start-fullscreen --incognito ~/Desktop/lobby-pi/index.html
 ```
